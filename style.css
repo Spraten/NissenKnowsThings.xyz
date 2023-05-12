@@ -1,0 +1,127 @@
+/* Reset default styles */
+body {
+    margin: 0;
+    padding: 0;
+}
+/* Style for the main content */
+.main {
+    display: flex;
+    background: linear-gradient(to bottom, #232424, #1d1b1b, #030303); /* gradient background */
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* Style for the header */
+header {
+  background: linear-gradient(to right, #5c5f60, #3e4041, #2e2d2d); /* gradient background */
+  color: #fff;
+  padding: 10px; /* increased padding */
+  display: flex;
+  justify-content: space-around; /* evenly distribute the links */
+  align-items: center;
+  font-size: 1.2em; /* increased font size */
+  height: 80px; /* increased header height */
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px; /* added horizontal margins */
+}
+
+nav a:hover {
+  color: #ffd700; /* links turn gold on hover */
+  transition: color 0.2s ease-in-out;
+}
+
+input[type="text"] {
+  margin-left: auto; /* align the search input to the right */
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.sidebar {
+  width: 60px;
+  height: 100vh;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: width 0.3s;
+}
+
+.sidebar-toggle {
+  width: 100%;
+  padding: 10px 0;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.sidebar-menu {
+  display: none;
+  width: 200px;
+  padding: 20px;
+}
+
+.sidebar-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.sidebar.active {
+  width: 200px;
+}
+
+.sidebar.active .sidebar-menu {
+  display: block;
+}
+
+
+/* Style for the terminal section */
+.terminal-section {
+  width: 80%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style for the terminal-like text box */
+.terminal-window {
+    width: 90%;
+    height: 90%;
+    background-color: black;
+    color: #2AF749;
+    font-family: monospace;
+    padding: 20px;
+    overflow: auto;
+    margin-top: 10px;
+}
+
+/* Style for the blinking cursor */
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+.blink {
+  animation: blink 1s step-end infinite;
+}

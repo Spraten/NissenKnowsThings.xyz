@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Terminal-like Text Box</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Buy me a Coffee</a>
+      <a href="#">Contact</a>
+      <a href="#">About us</a>
+      <input type="text" id="searchInput" placeholder="Search...">
+    </nav>
+  </header>
+
+<div class="sidebar">
+  <button class="sidebar-toggle" onclick="toggleSidebar()">&#9776;</button>
+  <nav class="sidebar-menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</div>
+
+  <div class="main" id="main">
+    <div class="terminal-section">
+      <div class="terminal-window" id="terminal"></div>
+      <button id="generateNumber" style="margin-top: 10px;">Generate Random Number</button>
+      <button id="randomFactButton">Get Random Fact</button>
+
+    </div>
+  </div>
+
+<div class="hover-area" id="hoverArea">
+  <div class="line"></div>
+</div>
+
+  
+</body>
+</html>
