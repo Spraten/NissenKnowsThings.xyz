@@ -119,6 +119,23 @@ a{color:inherit;text-decoration:none}
   box-shadow:0 0 8px var(--color-cyan), 0 0 8px var(--color-magenta);
 }
 
+/* Disclaimer banner ----------------------------------------------- */
+.disclaimer-banner{
+  background:linear-gradient(90deg, rgba(236,0,141,0.15), rgba(0,255,255,0.15));
+  border-top:2px solid var(--color-magenta);
+  border-bottom:2px solid var(--color-cyan);
+  padding:0.75rem 2rem;
+  text-align:center;
+}
+.disclaimer-text{
+  margin:0;
+  font-family:var(--font-ui);
+  font-size:0.9rem;
+  color:var(--color-text);
+  font-weight:600;
+  letter-spacing:0.05em;
+}
+
 /* Hero ------------------------------------------------------------- */
 .hero{
   display:flex;
