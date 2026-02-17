@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pasta Maker - Nissen Knows Things</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=VT323&family=Rubik+Glitch&family=Atkinson+Hyperlegible+Mono&family=Work+Sans:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Base site styles -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <div class="page">
+    <!-- Shared navbar -->
+    <header class="navbar" role="banner">
+      <div class="navbar-inner">
+        <a href="index.html" class="navbar-logo" aria-label="Nissen Knows Things Home">
+          <div class="navbar-logo-icon"></div>
+          <div class="navbar-logo-text">Nissen <span class="glitch">Knows</span> Things</div>
+        </a>
+
+        <nav class="navbar-links" aria-label="Primary">
+          <a href="aboutme.html" class="navbar-link">About Me</a>
+          <a href="projects.html" class="navbar-link">My Projects</a>
+          <a href="thingbot.html" class="navbar-link">Thing Bot</a>
+          <a href="pastamaker.html" class="navbar-link">Pasta Maker</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main content -->
+    <main class="page-inner pasta-main">
+
+      <!-- Header section
+      <section class="pasta-header-section">
+        <div class="pasta-header-title">
+          Pasta <span class="glitch">Maker</span> Console
+        </div>
+        <div class="pasta-header-meta">
+          <span class="pasta-status-dot"></span>
+          <span>Profile: <strong>Red Team Notebook</strong></span>
+          <span class="pasta-separator">|</span>
+          <span>Storage: Local Snippets (.txt)</span>
+        </div>
+      </section>
+      -->
+
+      <!-- Grid layout: Directory, Note Preview, Scratch Pad -->
+      <div class="pasta-grid">
+
+        <!-- COLUMN 1: DIRECTORY -->
+        <section class="pasta-panel">
+          <div class="pasta-panel-header">
+            <div class="pasta-panel-title">📁 Categories & Snippets</div>
+          </div>
+          <div class="pasta-panel-body">
+
+            <div class="pasta-dir-search">
+              <input type="text" class="pasta-input" placeholder="Search titles, tags, commands...">
+              <button class="pasta-mini-btn">Filter</button>
+            </div>
+
+            <div class="pasta-dir-tree">
+              <details open>
+                <summary><span class="pasta-dir-category">HackTheBox</span></summary>
+                <div class="pasta-dir-note">
+                  <span>Local Setup</span>
+                  <span class="note-tags">#setup</span>
+                </div>
+                <div class="pasta-dir-note">
+                  <span>Basic Nmap Scan</span>
+                  <span class="note-tags">#recon #nmap</span>
+                </div>
+                <div class="pasta-dir-note">
+                  <span>SMB Enumeration</span>
+                  <span class="note-tags">#smb</span>
+                </div>
+              </details>
+
+              <details>
+                <summary><span class="pasta-dir-category">Shells</span></summary>
+                <div class="pasta-dir-note">
+                  <span>Bind Shells</span>
+                  <span class="note-tags">#shells/bind</span>
+                </div>
+                <div class="pasta-dir-note">
+                  <span>Reverse Shells</span>
+                  <span class="note-tags">#shells/rev</span>
+                </div>
+              </details>
+
+              <details>
+                <summary><span class="pasta-dir-category">Web Enumeration</span></summary>
+                <div class="pasta-dir-note">
+                  <span>Gobuster PDF Hunt</span>
+                  <span class="note-tags">#gobuster</span>
+                </div>
+                <div class="pasta-dir-note">
+                  <span>Google Dorking PDFs</span>
+                  <span class="note-tags">#dorking</span>
+                </div>
+              </details>
+
+              <details>
+                <summary><span class="pasta-dir-category">Templates</span></summary>
+                <div class="pasta-dir-note">
+                  <span>HTB Machine Template</span>
+                  <span class="note-tags">#template</span>
+                </div>
+                <div class="pasta-dir-note">
+                  <span>Engagement Template</span>
+                  <span class="note-tags">#notes</span>
+                </div>
+              </details>
+            </div>
+          </div>
+        </section>
+
+        <!-- COLUMN 2: NOTE PREVIEW -->
+        <section class="pasta-panel">
+          <div class="pasta-panel-header">
+            <div class="pasta-panel-title">📄 Active Note</div>
+          </div>
+          <div class="pasta-panel-body">
+
+            <div class="pasta-note-meta">
+              <span>Category: <strong>HackTheBox</strong></span>
+              <span>•</span>
+              <span>Path: <code>pasta/HackTheBox/basic_nmap_scan.txt</code></span>
+            </div>
+
+            <div class="pasta-note-meta">
+              <button class="pasta-tag">#recon</button>
+              <button class="pasta-tag">#nmap</button>
+              <button class="pasta-tag">#network</button>
+            </div>
+
+            <h2 class="pasta-note-title">Basic Nmap Scan</h2>
+
+            <div class="pasta-note-preview">
+# Basic Nmap Scan
+
+Quick initial enumeration of a target host.
+
+```bash
+nmap -sC -sV -oN nmap_initial.txt TARGET
+```
+            </div>
+
+            <div class="pasta-note-actions">
+              <button class="btn">Copy Note</button>
+              <button class="btn">Copy Commands</button>
+              <button class="btn">Add to Working Pad</button>
+              <button class="btn">Mark as Used</button>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- COLUMN 3: SCRATCH PAD -->
+        <section class="pasta-panel">
+          <div class="pasta-panel-header">
+            <div class="pasta-panel-title">📝 Working Pad</div>
+          </div>
+          <div class="pasta-panel-body">
+
+            <div class="pasta-scratch-toolbar">
+              <button class="pasta-mini-btn">Clear</button>
+              <button class="pasta-mini-btn">Copy All</button>
+              <button class="pasta-mini-btn">Insert Template</button>
+              <button class="pasta-mini-btn">Export</button>
+            </div>
+
+            <textarea class="pasta-scratch" placeholder="# Your project notes here..."></textarea>
+
+            <div class="pasta-scratch-footer">
+              <span>Tip: Add snippets from the middle panel.</span>
+              <span>Future: Autosave per project.</span>
+            </div>
+
+          </div>
+        </section>
+
+      </div>
+
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <p class="footer-text">&copy; <span id="year"></span> Nissen Knows Things – Pasta Maker.</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

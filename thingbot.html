@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>ThingBot — Nissen Knows Things</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&family=Rubik+Glitch&family=Atkinson+Hyperlegible+Mono&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="page">
+    <header class="navbar" role="banner">
+      <div class="navbar-inner">
+        <a href="index.html" class="navbar-logo" aria-label="Nissen Knows Things Home">
+          <div class="navbar-logo-icon"></div>
+          <div class="navbar-logo-text">Nissen <span class="glitch">Knows</span> Things</div>
+        </a>
+
+        <nav class="navbar-links" aria-label="Primary">
+          <a href="aboutme.html" class="navbar-link">About Me</a>
+          <a href="projects.html" class="navbar-link">My Projects</a>
+          <a href="thingbot.html" class="navbar-link">Thing Bot</a>
+          <a href="pasta.html" class="navbar-link">Pasta Maker</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-inner thingbot-main" id="thingbot">
+      <section class="thingbot-hero" aria-labelledby="tb-title">
+        <div class="thingbot-hero-text">
+          <h1 class="thingbot-title" id="tb-title">ThingBot</h1>
+          <div class="thingbot-subtitle">Semi-cute terminal-faced assistant</div>
+          <p class="thingbot-description">
+            ThingBot is a tiny terminal widget that can show logs, respond to commands, or host an interactive assistant.
+            This demo page uses the shared styles so the look matches the rest of the site.
+          </p>
+        </div>
+
+        <!-- removed: bot moved down next to the terminal -->
+      </section>
+
+      <div class="thingbot-layout">
+        <div class="thingbot-terminal">
+          <div class="terminal-frame" role="region" aria-label="ThingBot terminal">
+            <div class="terminal-header">
+              <span class="term-dot term-dot-red" aria-hidden="true"></span>
+              <span class="term-dot term-dot-yellow" aria-hidden="true"></span>
+              <span class="term-dot term-dot-green" aria-hidden="true"></span>
+              <div class="terminal-title">thingbot@nissen</div>
+              <div class="terminal-status">connected</div>
+            </div>
+
+            <div class="terminal-body" aria-live="polite">
+              <div class="term-line term-line-muted">[system] initializing…</div>
+              <div class="term-line">> Hello, I am ThingBot. Try a command.</div>
+              <div class="term-line term-line-bot">thingbot: Ready.</div>
+            </div>
+
+            <div class="terminal-input-row">
+              <div class="terminal-prompt">nisse$</div>
+              <input class="terminal-input" type="text" placeholder="Type a command...">
+              <button class="terminal-btn">Send</button>
+            </div>
+          </div>
+        </div>
+
+        <aside class="thingbot-side">
+          <div class="tb-speech-bubble" id="tb-speech" aria-hidden="true">
+            <div class="tb-speech-text"></div>
+            <div class="tb-speech-tail"></div>
+          </div>
+
+          <!-- moved bot here so it sits next to the terminal -->
+          <div class="thingbot-hero-bot" aria-hidden="true">
+            <div class="tb-bot-antenna" aria-hidden="true"></div>
+
+            <!-- Head -->
+            <div class="tb-bot-head">
+              <div class="tb-bot-face">
+                <div class="tb-eyebrow tb-eyebrow-left"></div>
+                <div class="tb-eyebrow tb-eyebrow-right"></div>
+
+                <div class="tb-eyes-container">
+                  <div class="tb-eye tb-eye-left">
+                    <div class="tb-pupil tb-pupil-left"></div>
+                  </div>
+                  <div class="tb-eye tb-eye-right">
+                    <div class="tb-pupil tb-pupil-right"></div>
+                  </div>
+                </div>
+
+                <div class="tb-mouth"></div>
+              </div>
+            </div>
+
+            <!-- Body (arms & feet) -->
+            <div class="tb-bot-body">
+              <div class="tb-arm tb-arm-left"></div>
+              <div class="tb-arm tb-arm-right"></div>
+              <div class="tb-foot tb-foot-left"></div>
+              <div class="tb-foot tb-foot-right"></div>
+            </div>
+          </div>
+
+          <!-- existing panel (controls/logs) -->
+          <div class="thingbot-panel">
+            <h3 class="section-title">Controls</h3>
+            <p class="section-intro">This panel can host controls, presets, or logs for ThingBot.</p>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <p class="footer-text">&copy; <span id="year"></span> Nissen Knows Things.</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="assets/js/thingbot-core.js"></script>
+</body>
+</html>

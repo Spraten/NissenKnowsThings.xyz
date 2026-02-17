@@ -1,46 +1,201 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Terminal-like Text Box</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="script.js"></script>
+  <meta charset="UTF-8" />
+  <title>Nissen Knows Things</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=VT323&family=Rubik+Glitch&family=Atkinson+Hyperlegible+Mono&family=Work+Sans:wght@400;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Use external stylesheet for scalable, reusable styles -->
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Buy me a Coffee</a>
-      <a href="#">Contact</a>
-      <a href="#">About us</a>
-      <input type="text" id="searchInput" placeholder="Search...">
-    </nav>
-  </header>
+  <div class="page">
+    <header class="navbar">
+      <div class="navbar-inner">
+        <a href="index.html" class="navbar-logo" aria-label="Nissen Knows Things Home">
+          <div class="navbar-logo-icon"></div>
+          <div class="navbar-logo-text">
+            Nissen <span class="glitch">Knows</span> Things
+          </div>
+        </a>
+        <nav class="navbar-links">
+          <a href="aboutme.html" class="navbar-link">About Me</a>
+          <a href="projects.html" class="navbar-link">My Projects</a>
+          <a href="thingbot.html" class="navbar-link">Thing Bot</a>
+          <a href="pasta.html" class="navbar-link">Pasta Maker</a>
+        </nav>
+      </div>
+    </header>
 
-<div class="sidebar">
-  <button class="sidebar-toggle" onclick="toggleSidebar()">&#9776;</button>
-  <nav class="sidebar-menu">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
-</div>
+<main class="page-inner">
 
-  <div class="main" id="main">
-    <div class="terminal-section">
-      <div class="terminal-window" id="terminal"></div>
-      <button id="generateNumber" style="margin-top: 10px;">Generate Random Number</button>
-      <button id="randomFactButton">Get Random Fact</button>
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-left">
+      <div class="hero-avatar"></div>
 
+      <div class="hero-socials" aria-label="Social links">
+        <a href="#" title="GitHub" class="social-link">GH</a>
+        <a href="#" title="LinkedIn" class="social-link">IN</a>
+        <a href="#" title="Twitter/X" class="social-link">X</a>
+        <a href="mailto:you@example.com" title="Email" class="social-link">@</a>
+      </div>
     </div>
+
+    <div class="hero-right">
+      <h1 class="hero-name">Andreas C Nissen</h1>
+      <p class="hero-role">Offensive Cyberspace Operator</p>
+
+      <p class="hero-text">
+        I build and break systems to map real attack paths so defenders can fix problems before someone else finds them.
+      </p>
+
+      <div class="pill-row" aria-label="Highlights">
+        <span class="pill">Pentest + Red Team</span>
+        <span class="pill">Cloud + Azure</span>
+        <span class="pill">Writeups + Tools</span>
+      </div>
+
+      <div class="hero-buttons">
+        <a class="btn-primary" href="projects.html">View Projects</a>
+        <a class="btn-primary" href="thingbot.html">Try ThingBot</a>
+        <a class="btn-secondary" href="aboutme.html">About Me</a>
+      </div>
+    </div>
+
+    <div class="scroll-indicator" onclick="document.querySelector('#overview').scrollIntoView({behavior:'smooth'})">
+      <span class="scroll-indicator-text">Scroll</span>
+      <div class="scroll-indicator-arrow"></div>
+    </div>
+  </section>
+
+  <!-- WHAT THIS SITE IS -->
+  <section class="section" id="overview">
+    <h2 class="section-title">What you’ll find here</h2>
+    <p class="section-subtitle">
+      A lab notebook, portfolio, and playground. Practical notes, projects, and the occasional weird experiment.
+    </p>
+
+    <div class="card-grid">
+      <a class="card" href="projects.html">
+        <h3>Projects</h3>
+        <p>Tools, scripts, labs, and builds with clear writeups.</p>
+        <span class="card-cta">Browse projects →</span>
+      </a>
+
+      <a class="card" href="aboutme.html">
+        <h3>About</h3>
+        <p>Background, focus areas, certs, and what I’m working toward.</p>
+        <span class="card-cta">Read more →</span>
+      </a>
+
+      <a class="card" href="thingbot.html">
+        <h3>ThingBot</h3>
+        <p>A site utility and experiment hub. Expect upgrades and chaos.</p>
+        <span class="card-cta">Open ThingBot →</span>
+      </a>
+
+      <a class="card" href="pasta.html">
+        <h3>Pasta Maker</h3>
+        <p>Because not everything needs to be serious all the time.</p>
+        <span class="card-cta">Make pasta →</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- FEATURED -->
+  <section class="section" id="featured">
+    <div class="section-header">
+      <h2 class="section-title">Featured work</h2>
+      <a class="section-link" href="projects.html">See all →</a>
+    </div>
+
+    <div class="card-grid">
+      <a class="card" href="projects.html">
+        <h3>Cloud Lab: Azure Pilot</h3>
+        <p>Architecture, governance, and cost analysis work geared for real environments.</p>
+        <span class="tag-row">
+          <span class="tag">#cloud</span>
+          <span class="tag">#azure</span>
+          <span class="tag">#governance</span>
+        </span>
+      </a>
+
+      <a class="card" href="projects.html">
+        <h3>Pentest Notes + Templates</h3>
+        <p>Obsidian-friendly formats for enumeration, exploits, and reporting.</p>
+        <span class="tag-row">
+          <span class="tag">#pentest</span>
+          <span class="tag">#notes</span>
+          <span class="tag">#workflow</span>
+        </span>
+      </a>
+
+      <a class="card" href="projects.html">
+        <h3>CTF / HTB Writeups</h3>
+        <p>Step-by-step methodology, commands, and lessons learned.</p>
+        <span class="tag-row">
+          <span class="tag">#htb</span>
+          <span class="tag">#ctf</span>
+          <span class="tag">#postex</span>
+        </span>
+      </a>
+    </div>
+  </section>
+
+  <!-- RECENT / STATUS -->
+  <section class="section" id="recent">
+    <h2 class="section-title">Latest updates</h2>
+    <div class="list">
+      <div class="list-item">
+        <span class="list-date">2026-02-</span>
+        <a class="list-link" href="projects.html">Added new tooling notes and cleanup to the site structure</a>
+      </div>
+      <div class="list-item">
+        <span class="list-date">2026-02-</span>
+        <a class="list-link" href="thingbot.html">ThingBot: new features and experiments</a>
+      </div>
+      <div class="list-item">
+        <span class="list-date">2026-02-</span>
+        <a class="list-link" href="projects.html">Project writeup refresh: improved summaries and screenshots</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SNAPSHOT -->
+  <section class="section" id="about">
+    <h2 class="section-title">Quick bio</h2>
+    <p class="section-subtitle">
+      Marine veteran working in cybersecurity. I focus on offensive testing, cloud environments, and building tools that make work repeatable.
+    </p>
+    <a class="btn-secondary" href="aboutme.html">More about me →</a>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>© <span id="year"></span> Nissen Knows Things</span>
+      <span class="footer-links">
+        <a href="projects.html">Projects</a>
+        <a href="aboutme.html">About</a>
+        <a href="thingbot.html">ThingBot</a>
+        <a href="mailto:you@example.com">Contact</a>
+      </span>
+    </div>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </footer>
+
+</main>
+
   </div>
-
-<div class="hover-area" id="hoverArea">
-  <div class="line"></div>
-</div>
-
-  
 </body>
 </html>

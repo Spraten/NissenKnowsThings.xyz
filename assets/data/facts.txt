@@ -1,0 +1,56 @@
+Port 22 is SSH, the secure shell protocol for remote access.
+Port 80 is HTTP, unencrypted web traffic (don't use for sensitive data).
+Port 443 is HTTPS, encrypted web traffic with TLS/SSL.
+Port 3306 is MySQL database server.
+Port 5432 is PostgreSQL database server.
+Port 5984 is CouchDB NoSQL database.
+Port 8080 is often used for web proxies and alternate HTTP servers.
+SQL injection exploits allow attackers to manipulate database queries.
+Cross-Site Scripting (XSS) injects malicious scripts into web pages.
+Cross-Site Request Forgery (CSRF) tricks users into unwanted actions.
+OWASP Top 10 lists the most critical web application security risks.
+Brute force attacks try many password combinations until one works.
+Dictionary attacks use common words and passwords from a list.
+A VPN encrypts your traffic end-to-end and hides your IP address.
+Tor routes your traffic through multiple nodes for anonymity.
+Two-factor authentication (2FA) adds a second verification step.
+A firewall blocks unauthorized network traffic based on rules.
+Intrusion Detection Systems (IDS) monitor networks for suspicious activity.
+Intrusion Prevention Systems (IPS) actively block detected threats.
+Privilege escalation exploits allow users to gain higher access levels.
+Social engineering tricks people into revealing sensitive information.
+Phishing emails impersonate trusted sources to steal credentials.
+Zero-day vulnerabilities are unknown to vendors and defenders.
+A buffer overflow writes data beyond allocated memory boundaries.
+Man-in-the-Middle (MITM) attacks intercept communication between two parties.
+Reverse shells give attackers remote command execution on a target.
+Backdoors provide persistent unauthorized access to a system.
+Rootkits hide malicious activity by modifying system software.
+Polymorphic malware changes its code to evade detection.
+Ransomware encrypts files and demands payment for decryption.
+Denial of Service (DoS) floods a target with traffic to take it offline.
+Distributed Denial of Service (DDoS) uses multiple machines for DoS attacks.
+ARP spoofing tricks systems into sending traffic to the wrong destination.
+DNS spoofing redirects traffic by poisoning DNS cache records.
+VLAN hopping exploits switch misconfigurations to access restricted networks.
+Packet sniffing captures network traffic for analysis or theft.
+Wireshark is a popular open-source network packet analyzer.
+Nmap is a network scanner tool for discovering hosts and services.
+Metasploit is a penetration testing framework with many exploit modules.
+Burp Suite is a web application security testing tool.
+OWASP ZAP is a free alternative to Burp for web app pentesting.
+Nikto is a web server scanner that detects common vulnerabilities.
+SQLmap automates SQL injection detection and exploitation.
+John the Ripper is a password cracking tool using various attack modes.
+Hashcat uses GPU acceleration for fast password hash cracking.
+The CIA triad consists of Confidentiality, Integrity, and Availability.
+Defense in depth uses multiple layers of security controls.
+Principle of least privilege restricts access to minimum necessary permissions.
+Security through obscurity is not a reliable security strategy.
+An air-gapped system has no network connection for maximum isolation.
+A honeypot is a fake system designed to attract and study attackers.
+A security audit reviews systems for vulnerabilities and compliance.
+Penetration testing simulates real attacks to find weaknesses.
+Red teams act as attackers; blue teams defend; purple teams do both.
+Threat modeling identifies potential attack vectors and risks.
+Risk assessment evaluates the likelihood and impact of threats.

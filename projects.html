@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Nissen Knows Things – Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=VT323&family=Rubik+Glitch&family=Atkinson+Hyperlegible+Mono&family=Work+Sans:wght@400;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="projects-body">
+  <!-- Shared navbar -->
+  <header class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo">
+        <div class="navbar-logo-icon"></div>
+        <div class="navbar-logo-text">
+          Nissen <span class="glitch">Knows</span> Things
+        </div>
+      </a>
+
+      <nav class="navbar-links">
+        <a href="aboutme.html" class="navbar-link">About</a>
+        <a href="projects.html" class="navbar-link is-active">Projects</a>
+        <a href="thingbot.html" class="navbar-link">ThingBot</a>
+        <a href="pasta.html" class="navbar-link">Pasta Maker</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="projects-main">
+    <!-- Page intro -->
+    <section class="projects-header">
+      <h1 class="section-title">Projects</h1>
+      <p class="projects-tagline">
+        A growing lab of templates, tools, servers, and experiments.
+      </p>
+      <p class="projects-intro">
+        Use the index on the right to jump between categories. Each project card
+        is meant to be easy to clone and tweak. When something grows big enough,
+        you can give it its own page or repo link.
+      </p>
+    </section>
+
+    <div class="projects-layout">
+      <!-- Main content: all categories + project cards -->
+      <div class="projects-content">
+        <!-- Template Projects --------------------------------- -->
+        <section id="template-projects" class="projects-section">
+          <header class="projects-section-header">
+            <h2 class="projects-section-title">Template Projects</h2>
+            <p class="projects-section-subtitle">
+              Reusable blueprints: writeup templates, report layouts, and lab
+              scaffolding.
+            </p>
+          </header>
+
+          <div class="projects-grid">
+            <!-- Project card example – duplicate for more -->
+            <article class="project-card" id="tpl-personal-site">
+              <div class="project-media project-gallery" data-images="assets/img/projects/tpl-personal-site-1.jpg,assets/img/projects/tpl-personal-site-2.jpg,assets/img/projects/tpl-personal-site-3.jpg">
+                <div class="project-main">
+                  <img class="project-image" src="assets/img/projects/tpl-personal-site-1.jpg" alt="Personal site template screenshot">
+                  <button class="gallery-btn prev" aria-label="Previous image">‹</button>
+                  <button class="gallery-btn next" aria-label="Next image">›</button>
+                </div>
+                <div class="project-thumbs" aria-hidden="false">
+                  <button class="project-thumb" data-index="0"><img src="assets/img/projects/tpl-personal-site-1.jpg" alt=""></button>
+                  <button class="project-thumb" data-index="1"><img src="assets/img/projects/tpl-personal-site-2.jpg" alt=""></button>
+                  <button class="project-thumb" data-index="2"><img src="assets/img/projects/tpl-personal-site-3.jpg" alt=""></button>
+                </div>
+              </div>
+              <h3 class="project-title">Personal Site Template</h3>
+              <p class="project-meta">
+                Type: HTML / CSS · Status: In progress
+              </p>
+              <p class="project-desc">
+                Base layout for this site: glitch header, resume sections, and
+                project grids. Intended as a starting point for other
+                cybersecurity portfolios.
+              </p>
+              <div class="project-tags">
+                <span class="tag">template</span>
+                <span class="tag">frontend</span>
+              </div>
+            </article>
+
+            <article class="project-card" id="tpl-htb-notes">
+              <div class="project-media project-gallery" data-images="assets/img/projects/tpl-htb-notes-1.jpg,assets/img/projects/tpl-htb-notes-2.jpg">
+                <div class="project-main">
+                  <img class="project-image" src="assets/img/projects/tpl-htb-notes-1.jpg" alt="HTB writeup template preview">
+                  <button class="gallery-btn prev" aria-label="Previous image">‹</button>
+                  <button class="gallery-btn next" aria-label="Next image">›</button>
+                </div>
+                <div class="project-thumbs">
+                  <button class="project-thumb" data-index="0"><img src="assets/img/projects/tpl-htb-notes-1.jpg" alt=""></button>
+                  <button class="project-thumb" data-index="1"><img src="assets/img/projects/tpl-htb-notes-2.jpg" alt=""></button>
+                </div>
+              </div>
+              <h3 class="project-title">HTB Writeup Template</h3>
+              <p class="project-meta">
+                Type: Obsidian / Markdown · Status: Placeholder
+              </p>
+              <p class="project-desc">
+                Standardized structure for HackTheBox notes: recon, foothold,
+                privesc, loot, and remediation.
+              </p>
+              <div class="project-tags">
+                <span class="tag">template</span>
+                <span class="tag">notes</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Software Projects --------------------------------- -->
+        <section id="software-projects" class="projects-section">
+          <header class="projects-section-header">
+            <h2 class="projects-section-title">Software Projects</h2>
+            <p class="projects-section-subtitle">
+              Desktop or web tools that actually do things (or will soon).
+            </p>
+          </header>
+
+          <div class="projects-grid">
+            <article class="project-card" id="sw-schedule-tool">
+              <div class="project-media project-gallery" data-images="assets/img/projects/sw-schedule-tool-1.jpg,assets/img/projects/sw-schedule-tool-2.jpg">
+                <div class="project-main">
+                  <img class="project-image" src="assets/img/projects/sw-schedule-tool-1.jpg" alt="Schedule tool preview">
+                  <button class="gallery-btn prev" aria-label="Previous image">‹</button>
+                  <button class="gallery-btn next" aria-label="Next image">›</button>
+                </div>
+                <div class="project-thumbs">
+                  <button class="project-thumb" data-index="0"><img src="assets/img/projects/sw-schedule-tool-1.jpg" alt=""></button>
+                  <button class="project-thumb" data-index="1"><img src="assets/img/projects/sw-schedule-tool-2.jpg" alt=""></button>
+                </div>
+              </div>
+              <h3 class="project-title">Schedule Tool</h3>
+              <p class="project-meta">
+                Stack: TBD · Status: Placeholder
+              </p>
+              <p class="project-desc">
+                Placeholder for a future scheduling / tracking app. Replace this
+                text with real details when the project spins up.
+              </p>
+              <div class="project-tags">
+                <span class="tag">software</span>
+                <span class="tag">planning</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Coding Projects ----------------------------------- -->
+        <section id="coding-projects" class="projects-section">
+          <header class="projects-section-header">
+            <h2 class="projects-section-title">Coding Projects</h2>
+            <p class="projects-section-subtitle">
+              Scripts, small tools, and proof-of-concept code.
+            </p>
+          </header>
+
+          <div class="projects-grid">
+            <article class="project-card" id="code-glitch-bg">
+              <div class="project-media project-gallery" data-images="assets/img/projects/code-glitch-bg-1.jpg,assets/img/projects/code-glitch-bg-2.jpg">
+                <div class="project-main">
+                  <img class="project-image" src="assets/img/projects/code-glitch-bg-1.jpg" alt="Glitch background generator output">
+                  <button class="gallery-btn prev" aria-label="Previous image">‹</button>
+                  <button class="gallery-btn next" aria-label="Next image">›</button>
+                </div>
+                <div class="project-thumbs">
+                  <button class="project-thumb" data-index="0"><img src="assets/img/projects/code-glitch-bg-1.jpg" alt=""></button>
+                  <button class="project-thumb" data-index="1"><img src="assets/img/projects/code-glitch-bg-2.jpg" alt=""></button>
+                </div>
+              </div>
+              <h3 class="project-title">Glitch Background Generator</h3>
+              <p class="project-meta">
+                Python · Status: Prototype
+              </p>
+              <p class="project-desc">
+                Python script that renders chunky glitch backgrounds using your
+                magenta and cyan palette. Used for site art and wallpapers.
+              </p>
+              <div class="project-tags">
+                <span class="tag">python</span>
+                <span class="tag">graphics</span>
+              </div>
+            </article>
+
+            <article class="project-card" id="code-automation">
+              <div class="project-media project-gallery" data-images="assets/img/projects/code-automation-1.jpg,assets/img/projects/code-automation-2.jpg">
+                <div class="project-main">
+                  <img class="project-image" src="assets/img/projects/code-automation-1.jpg" alt="Automation scripts example">
+                  <button class="gallery-btn prev" aria-label="Previous image">‹</button>
+                  <button class="gallery-btn next" aria-label="Next image">›</button>
+                </div>
+                <div class="project-thumbs">
+                  <button class="project-thumb" data-index="0"><img src="assets/img/projects/code-automation-1.jpg" alt=""></button>
+                  <button class="project-thumb" data-index="1"><img src="assets/img/projects/code-automation-2.jpg" alt=""></button>
+                </div>
+              </div>
+              <h3 class="project-title">Automation Scripts (Placeholder)</h3>
+              <p class="project-meta">
+                Bash / PowerShell · Status: Planned
+              </p>
+              <p class="project-desc">
+                Slot for deployment scripts, lab setup helpers, and other small
+                automation utilities.
+              </p>
+              <div class="project-tags">
+                <span class="tag">scripting</span>
+                <span class="tag">ops</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- 3D Printing --------------------------------------- -->
+        <section id="printing-projects" class="projects-section">
+          <header class="projects-section-header">
+            <h2 class="projects-section-title">3D Printing</h2>
+            <p class="projects-section-subtitle">
+              Printable parts, miniatures, and lab utility prints.
+            </p>
+          </header>
+
+          <div class="projects-grid">
+            <article class="project-card" id="print-thingbot-stand">
+              <div class="project-media project-gallery" data-images="assets/img/projects/print-thingbot-stand-1.jpg,assets/img/projects/print-thingbot-stand-2.jpg">
+                <div class="project-main">
+                  <img class="project-image" src="assets/img/projects/print-thingbot-stand-1.jpg" alt="ThingBot desk stand render">
+                  <button class="gallery-btn prev" aria-label="Previous image">‹</button>
+                  <button class="gallery-btn next" aria-label="Next image">›</button>
+                </div>
+                <div class="project-thumbs">
+                  <button class="project-thumb" data-index="0"><img src="assets/img/projects/print-thingbot-stand-1.jpg" alt=""></button>
+                  <button class="project-thumb" data-index="1"><img src="assets/img/projects/print-thingbot-stand-2.jpg" alt=""></button>
+                </div>
+              </div>
+              <h3 class="project-title">ThingBot Desk Stand</h3>
+              <p class="project-meta">
+                STL / Resin · Status: Idea
+              </p>
+              <p class="project-desc">
+                Planned 3D model of a small desk stand with the ThingBot face,
+                designed for painting and display next to your rig.
+              </p>
+              <div class="project-tags">
+                <span class="tag">3d-printing</span>
+                <span class="tag">resin</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Game Servers -------------------------------------- -->
+        <section id="game-servers" class="projects-section">
+          <header class="projects-section-header">
+            <h2 class="projects-section-title">Game Servers</h2>
+            <p class="projects-section-subtitle">
+              Minecraft, modded worlds, and other managed servers.
+            </p>
+          </header>
+
+          <div class="projects-grid">
+            <article class="project-card" id="srv-mc-lab">
+              <div class="project-media project-gallery" data-images="assets/img/projects/srv-mc-lab-1.jpg,assets/img/projects/srv-mc-lab-2.jpg">
+                <div class="project-main">
+                  <img class="project-image" src="assets/img/projects/srv-mc-lab-1.jpg" alt="Minecraft lab server screenshot">
+                  <button class="gallery-btn prev" aria-label="Previous image">‹</button>
+                  <button class="gallery-btn next" aria-label="Next image">›</button>
+                </div>
+                <div class="project-thumbs">
+                  <button class="project-thumb" data-index="0"><img src="assets/img/projects/srv-mc-lab-1.jpg" alt=""></button>
+                  <button class="project-thumb" data-index="1"><img src="assets/img/projects/srv-mc-lab-2.jpg" alt=""></button>
+                </div>
+              </div>
+              <h3 class="project-title">Minecraft Lab Server</h3>
+              <p class="project-meta">
+                Fabric / Linux · Status: Ongoing
+              </p>
+              <p class="project-desc">
+                Modded Minecraft server used as a sandbox for automation,
+                scripting with CC:Tweaked, and base-building chaos with friends.
+              </p>
+              <div class="project-tags">
+                <span class="tag">minecraft</span>
+                <span class="tag">server-admin</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- HackTheBox ---------------------------------------- -->
+        <section id="hackthebox" class="projects-section">
+          <header class="projects-section-header">
+            <h2 class="projects-section-title">HackTheBox</h2>
+            <p class="projects-section-subtitle">
+              Boxes, challenges, and tooling around HTB workflows.
+            </p>
+          </header>
+
+          <div class="projects-grid">
+            <article class="project-card" id="htb-writeups">
+              <div class="project-media project-gallery" data-images="assets/img/projects/htb-writeups-1.jpg,assets/img/projects/htb-writeups-2.jpg">
+                <div class="project-main">
+                  <img class="project-image" src="assets/img/projects/htb-writeups-1.jpg" alt="HTB writeups cover">
+                  <button class="gallery-btn prev" aria-label="Previous image">‹</button>
+                  <button class="gallery-btn next" aria-label="Next image">›</button>
+                </div>
+                <div class="project-thumbs">
+                  <button class="project-thumb" data-index="0"><img src="assets/img/projects/htb-writeups-1.jpg" alt=""></button>
+                  <button class="project-thumb" data-index="1"><img src="assets/img/projects/htb-writeups-2.jpg" alt=""></button>
+                </div>
+              </div>
+              <h3 class="project-title">HTB Writeup Collection</h3>
+              <p class="project-meta">
+                Obsidian / Markdown · Status: In progress
+              </p>
+              <p class="project-desc">
+                Private and public-ready notes based on a consistent template:
+                recon, foothold, privesc, post-ex, and lessons learned.
+              </p>
+              <div class="project-tags">
+                <span class="tag">hackthebox</span>
+                <span class="tag">notes</span>
+              </div>
+            </article>
+
+            <article class="project-card" id="htb-tooling">
+              <div class="project-media project-gallery" data-images="assets/img/projects/htb-tooling-1.jpg,assets/img/projects/htb-tooling-2.jpg">
+                <div class="project-main">
+                  <img class="project-image" src="assets/img/projects/htb-tooling-1.jpg" alt="HTB tooling examples">
+                  <button class="gallery-btn prev" aria-label="Previous image">‹</button>
+                  <button class="gallery-btn next" aria-label="Next image">›</button>
+                </div>
+                <div class="project-thumbs">
+                  <button class="project-thumb" data-index="0"><img src="assets/img/projects/htb-tooling-1.jpg" alt=""></button>
+                  <button class="project-thumb" data-index="1"><img src="assets/img/projects/htb-tooling-2.jpg" alt=""></button>
+                </div>
+              </div>
+              <h3 class="project-title">HTB Tooling (Placeholder)</h3>
+              <p class="project-meta">
+                Python / Bash · Status: Planned
+              </p>
+              <p class="project-desc">
+                Slot for helper scripts that streamline enumeration, note
+                generation, or report export for HackTheBox labs.
+              </p>
+              <div class="project-tags">
+                <span class="tag">automation</span>
+                <span class="tag">offsec</span>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+
+      <!-- Right-side index / nav -->
+      <aside class="projects-nav">
+        <div class="projects-nav-title">Project Index</div>
+
+        <nav class="projects-nav-groups">
+          <div class="projects-nav-group">
+            <div class="projects-nav-group-label">Categories</div>
+            <a href="#template-projects" class="projects-nav-link">
+              Template Projects
+            </a>
+            <a href="#software-projects" class="projects-nav-link">
+              Software Projects
+            </a>
+            <a href="#coding-projects" class="projects-nav-link">
+              Coding Projects
+            </a>
+            <a href="#printing-projects" class="projects-nav-link">
+              3D Printing
+            </a>
+            <a href="#game-servers" class="projects-nav-link">
+              Game Servers
+            </a>
+            <a href="#hackthebox" class="projects-nav-link">
+              HackTheBox
+            </a>
+          </div>
+
+          <div class="projects-nav-group">
+            <div class="projects-nav-group-label">Tips</div>
+            <p class="projects-nav-note">
+              • Duplicate any <code>.project-card</code> inside a category.<br>
+              • Update the <code>id</code> if you want deep links.<br>
+              • When a project gets big, link out to a repo or dedicated page.
+            </p>
+          </div>
+        </nav>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Nissen Knows Things – Projects.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Simple gallery initializer for project albums
+    (function () {
+      function initGallery(gallery) {
+        var imgs = gallery.dataset.images ? gallery.dataset.images.split(',') : [];
+        var mainImg = gallery.querySelector('.project-image');
+        var thumbs = Array.from(gallery.querySelectorAll('.project-thumb'));
+        var prevBtn = gallery.querySelector('.gallery-btn.prev');
+        var nextBtn = gallery.querySelector('.gallery-btn.next');
+        var index = 0;
+
+        function show(i) {
+          if (!imgs[i]) return;
+          index = i;
+          mainImg.src = imgs[i];
+          thumbs.forEach(function (t) { t.classList.toggle('active', Number(t.dataset.index) === i); });
+        }
+
+        thumbs.forEach(function (t) {
+          t.addEventListener('click', function () { show(Number(t.dataset.index)); });
+        });
+
+        if (prevBtn) prevBtn.addEventListener('click', function () { show((index - 1 + imgs.length) % imgs.length); });
+        if (nextBtn) nextBtn.addEventListener('click', function () { show((index + 1) % imgs.length); });
+
+        // preload images (optional)
+        imgs.forEach(function (src) { var i = new Image(); i.src = src; });
+
+        // initial state (first image)
+        show(0);
+      }
+
+      document.addEventListener('DOMContentLoaded', function () {
+        var galleries = document.querySelectorAll('.project-gallery');
+        galleries.forEach(initGallery);
+      });
+    })();
+  </script>
+</body>
+</html>
